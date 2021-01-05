@@ -1,0 +1,30 @@
+﻿@model NekoJourney.Models.Review
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Review</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nama)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nama)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Review1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Review1)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdReview">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -2,93 +2,502 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
+<header id="header" id="home">
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
+    <div class="container">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+                <a href="index.html"><img src="~/images/coffee1.png" height="40" alt="" title="" /></a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="#home">Home</a></li>
+                    <li><a href="#coffee">Best Coffee</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#blog">Jenis</a></li>
+                    <li><a href="login_admin.html">Login Admin</a></li>
+
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
     </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
+</header><!-- #header -->
+<!-- start banner Area -->
+<section class="banner-area" id="home">
+    <div class="container">
+        <div class="row fullscreen d-flex align-items-center justify-content-start">
+            <div class="banner-content">
+                <h6 class="text-white text-uppercase">Now you can feel the Energy</h6>
+                <h1>
+                    Find your Coffee with<br>
+                    Coffee Journey
+                </h1>
+                <div class="explore">
+                    <a href="#coffee" class="genric-btn primary circle">Explore Now</a>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
+</section>
+
+<!-- Start menu Area -->
+<section class="menu-area section-gap" id="coffee">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-60 col-lg-10">
+                <div class="title text-center">
+                    <h1 class="mb-10">Enam Kucing terbaik menurut kami</h1>
+                    <p>Kucing mana menurut kamu</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="single-menu">
+                    <div class="title-div justify-content-between d-flex">
+                        <h4>Kucing Persia</h4>
+
+                    </div>
+                    <p>
+                        Kucing Persia pertama kali ditemukan tahun 1871 dan diakui 
+                        secara resmi pada tahun 1890. Kucing ini menjadi salah satu 
+                        kucing paling populer di kalangan pecinta kucing karena bulunya 
+                        yang lebat dan wajahnya yang menggemaskan. Kucing Persia sendiri 
+                        memiliki jenisnya lagi seperti Short Hair Persian.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6">
+                <div class="single-menu">
+                    <div class="title-div justify-content-between d-flex">
+                        <h4>Kucing Ashera</h4>
+
+                    </div>
+                    <p>
+                        Kucing jenis Ashera dikenal sebagai kucing hibrida Afrika 
+                        dan kucing macan Asia. Kucing ini menjadi yang paling langka 
+                        di dunia karena kecerdasan dan kesetiaannya. Kucing ini disilangkan
+                        oleh perusahaan Lifestyle Pets yang berfokus pada hewan peliharaan eksklusif.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="single-menu">
+                    <div class="title-div justify-content-between d-flex">
+                        <h4>Kucing British</h4>
+
+                    </div>
+                    <p>
+                        Kucing bulu pendek britania adalah salah satu ras kucing tertua yang 
+                        nenek moyang dipercayai memiliki hubungan dengan bangsa Romawi yang 
+                        pernah dahulu menguasai Inggris. Kucing ini adalah kucing berbadan 
+                        sedang dengan bulu yang pendek.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="single-menu">
+                    <div class="title-div justify-content-between d-flex">
+                        <h4>Kucing Savannah</h4>
+                    </div>
+                    <p>
+                        Kucing ini juga berasal dari hibrida Afrika. Kucing ini merupakan 
+                        hasil dari persilangan kucing domestik dan kucing serval di Afrika.
+                        Ashera adalah salah satu dari ras kucing terbesar di dunia. 
+                        Tingkahnya yang sangat aktif membuat kucing ini membutuhkan ruang yang luas.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="single-menu">
+                    <div class="title-div justify-content-between d-flex">
+                        <h4>Kucing Russian Blue</h4>
+
+                    </div>
+                    <p>
+                        Kucing biru rusia adalah salah satu ras kucing yang memiliki bulu 
+                        berwarna perak biru. Kucing ini sangat cerdas dan lucu, tetapi 
+                        cenderung pemalu di sekitar orang asing. Kucing biru rusia merupakan 
+                        kucing yang memiliki ikatan yang erat dengan sahabatnya manusia.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="single-menu">
+                    <div class="title-div justify-content-between d-flex">
+                        <h4>Kucing Bengal</h4>
+
+                    </div>
+                    <p>
+                        Ras Bengal populer karena keindahan corak bulunya yang seperti 
+                        harimau dengan pola tutul dan garis. Ditemukan oleh seorang 
+                        ilmuwan bernama Dr. Centerwall, kucing ini merupakan hasil 
+                        persilangan dari kucing American Short Hair dan kucing Leopard Asia.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
+</section>
+<!-- End menu Area -->
+<!-- End banner Area -->
+<!-- Start blog Area -->
+<section class="blog-area section-gap" id="blog">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-60 col-lg-10">
+                <div class="title text-center">
+                    <h1 class="mb-10">Jenis - Jenis Kucing Dari Seluruh Dunia</h1>
+                    <p>Setiap kucing berbeda sesuai tempat asalnya</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/KucingMoggie.jpg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Kucing Moggie</br></h4>
+                </a>
+                <p>
+                    Kucing lokal biasanya dikenal sebagai ‘moggie’  adalah kucing
+                    yang umumnya tinggal di rumah-rumah di Inggris. Kucing ini tidak
+                    memiliki keturunan istimewa dan datang sebagai kucing liar dari 
+                    daratan Afrika yang berbeda sekitar 8.000 tahun sebelum masehi
+                    dan dapat ditemukan di hampir semua tempat dimana manusia hidup
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/KucingExotic.jpg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Exotic Shorthair</br></h4>
+                </a>
+                <p>
+                    Kucing ini dikenal sebagai ‘wash-and-wear Persian’ karena perawatannya
+                    yang mudah, bulunya yang selembut beludru dengan susunan warnanya yang
+                    mempesona. Memiliki ciri yang sama dengan anak kucing adalah hal yang 
+                    paling lucu, dengan mata bulatnya yang besar, telinganya yang kecil, mukanya
+                    yang rata dan hidungnya yang pendek.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/KucingJapaneseBobtail.jpg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Japanese Bobtail</br></h4>
+                </a>
+                <p>
+                    Japanese Bobtail berbulu panjang telah hidup beberapa abad lamanya di Orient 
+                    yang memiliki bulu yang pendek. Japanese Bobtail adalah kucing yang kuat dan 
+                    sehat dan biasanya memiliki tiga sampai empat anak kucing yang berukuran 
+                    cukup besar dibandingkan dengan ukuran anak yang baru lahir. 
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/KucingKorat.jpeg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Korat</br></h4>
+                </a>
+                <p>
+                   Korat adalah salah satu jenis kucing tertua di dunia dan dikenal di Negara aslinya,
+                   Thailand sebagai “Si-Sawat” – kucing suci dan pengawas nasib baik. Bulu Korat yang 
+                   bewarna silver memiliki arti dalam legenda terdahulu yang menunjukan kekayaan pada 
+                   saudagar dan pedagar.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/KucingMaineCoon.jpg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Maine Coon</br></h4>
+                </a>
+                <p>
+                    Maine Coons adalah kucing terbesar dari semua ras kucing domestik. Sebagian besar 
+                    Maine Coon dapat memiliki berat hingga 15 kilogram. Mereka sangat kuat, perkasa, 
+                    dan dapat bertahan dalam iklim yang berat. Jenis ras ini tampaknya merupakan persilangan 
+                    antara kucing domestik berbulu pendek dan kucing luar negeri berbulu panjang
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/KucingManx.jpg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Manx</br></h4>
+                </a>
+                <p>
+                    Ras kucing Manx adalah jenis kucing tanpa ekor dan berbeda dari kucing pada 
+                    umumnya yang tidak berekor dan juga secara keseluruhan penampilannya sedikit 
+                    berbeda karena kaki belakangnya lebih panjang dibandingkan kucing biasa. 
+                    Dan ketika hewan ini berlari, mereka mirip dengan seekor kelinci, sangat menarik untuk disaksikan.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/KucingNorwegianForest.jpg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Norwegian Forest Cat</br></h4>
+                </a>
+                <p>
+                    Kucing Norwegian Forest adalah jenis keturunan zaman purba yang berasal dari Norwegia, 
+                    lebih dari 500 tahun yang lalu. Bahkan beberapa orang percaya bahwa kucing ini sudah 
+                    berkembang biak sejak 2000 tahun yang lalu. Hewan yang cantik ini juga dikenal sebagai Wegie, 
+                    Norskogkatt, Skogkatt atau Norskskaukatt. 
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/KucingKorat.jpeg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Ocicat</br></h4>
+                </a>
+                <p>
+                    Ocicat adalah hewan yang besar dan aktif dengan tubuh yang berotot dan berbulu satin 
+                    pendek dan langka yang menunjukan bintik-bintiknya. Pada tahun 1964, Ocicat yang asli 
+                    adalah hasil tak terduga dari percobaan suatu perkawinan yang mencoba untuk menghasilkan 
+                    kucing siam aby-point.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/Kopi Gayo.jpg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Oriental Shorthair</br></h4>
+                </a>
+                <p>
+                    Oriental Shorthair adalah seekor kucing yang memiliki rasa penasaran yang tinggi dan 
+                    sangat percaya diri, namun kedua hal itu dapat menjadi hal yang menyenangkan dan 
+                    ancaman di dalam rumah. Jenis kucing ini dilimpahi karisma dan kecerdasan, senang 
+                    mengambil resiko dalam hidupnya dan tidak dapat dipungkiri
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/KucingPersian.jpg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Persian</br></h4>
+                </a>
+                <p>
+                    Kucing Persia adalah kucing ras asing pertama yang diimpor ke Thailand. 
+                    Kucing Persia telah menjadi salah satu ras kucing paling populer baik l
+                    okal maupun internasional. Mereka memiliki kepala bulat yang khas, dengan 
+                    telinga kecil yang membulat di ujungnya.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/KucingRagdoll.jpg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Ras kucing Ragdoll</br></h4>
+                </a>
+                <p>
+                    Ragdoll adalah jenis kucing yang cocok untukmu! Kucing yang tenang, lembut 
+                    dan mudah bergaul ini berasal dari Amerika Serikat, sebagaimana nama mereka 
+                    diusulkan, mereka sangat santai dan suka bergantungan di tanganmu seperti 
+                    rag doll. Umumnya mereka beranggapan bahwa sumbernya berkaitan dengan Colourpoint 
+                    Persians.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/Kopi Bourbo.jpg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Kopi Bourbon</br></h4>
+                </a>
+                <p>
+                    Kopi yang satu ini punya citarasa manis yang khas dan tekstur yang halus dan menarik.
+                    Kopi Bourbon terkenal langka karena pohonnya yang mudah rapuh sehingga menghasilkan biji
+                    kopi yang lebih sedikit daripada kopi pada umumnya.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/kopi Catuai.jpg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Kopi Catuai</br></h4>
+                </a>
+                <p>
+                    Catuai juga merupakan salah satu unsur kopi Robusta. Karena itulah tingkat keasaman kopi
+                    ini begitu rendah. Kopi jenis catuai bisa kita temui di daerah Timor Timor dan daerah bagian
+                    timur Indonesia. Meski punya citarasa pahit, kopi catuai meninggalkan rasa buah dan rempah
+                    yang kental setelah menyeruput kopi ini.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/Kopi Caturra.jpg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Kopi Caturra</br></h4>
+                </a>
+                <p>
+                    Kopi ini pertama kali ditemukan di Kolombia, Kosta Rika dan Nikaragua. Pohon kopinya yang
+                    kecil-kecil banyak tumbuh di sekitar Amerika Selatan. Kopi yang kemudian lebih banyak
+                    dikembangkan di Brazil ini dibedakan ke dalam dua jenis, bright acidity dan low-to-medium
+                    body.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/Kopi Pacamara.jpg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Kopi Pacamara</br></h4>
+                </a>
+                <p>
+                    Menurut para penikmat kopi, kopi pacamara punya citarasa yang luar biasa dengan sedikit rasa
+                    manis citrus. Kopi ini punya keseimbangan rasa yang mengagumkan dan aroma tumbuhan yang nikmat.
+                    Pacamara adalah jenis kopi yang unik dan punya kualitas yang baik.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/Kopi Sumatera.jpg" height="100" alt="">
+                <a href="#">
+                    <h4><br>Kopi Sumatera</br></h4>
+                </a>
+                <p>
+                    Tak jauh berbeda dari tetangganya, Kopi Gayo, Kopi khas Sumatera juga punya kepopuleran hingga ke
+                    mancanegara. Kopi Sumatera umumnya berasal dari daerah Mandaling. Menurut sejarahnya, kopi yang punya
+                    cita rasa enak dan khas serta berkualitas ini dibawa dari Mekkah yang kemudian ditanam di Minangkabau
+                    dan dikembangkan oleh pemerintah Hindia Belanda.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/Sidikalang.png" height="100" alt="">
+                <a href="#">
+                    <h4><br>Kopi Sidikalang</br></h4>
+                </a>
+                <p>
+                    Sidikalang berasal dari Kabupaten Dairi, Sumatera Utara.
+                    Kopi Sidikalang dikenal dengan ciri khas tebal, keasaman yang rendah, dengan kadar bitterness yang tinggi.
+                    Kopi ini dibudidayakan di kawasan Bukit Barisan.
+                    Sidikalang punya kepopuleran hingga ke mancanegara, kopi ini mampu menandingi kopi khas Brazil.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/Kintamani.png" height="100" alt="">
+                <a href="#">
+                    <h4><br>Kopi Kintamani</br></h4>
+                </a>
+                <p>
+                    Kopi Kintamani terkenal sebagai kopi dengan kulitas yang bagus.
+                    Karena proses pengembangan kopi di daerah Kintamani ditanam di daerah berhawa sejuk,
+                    bahkan perawatannya masih menggunakan sistem pengairan tradisional.
+                    Kopi kintamani masih termasuk kopi organik yang memiliki tekstur halus dan lembut di lidah.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/Lanang pas.png" height="100" alt="">
+                <a href="#">
+                    <h4><br>Kopi Lanang</br></h4>
+                </a>
+                <p>
+                    Nama ‘Lanang’ disematkan pada kopi ini karena dipercaya dapat menambah vitalitas pria.
+                    Kadar kafein yang tinggi yang membuat dapat berlama-lama tidak memejamkan mata untuk tidur.
+                    Kopi yang banyak diproduksi di Jawa Timur ini, sudah terkenal hingga ke Amerika.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/Wamena.png" height="100" alt="">
+                <a href="#">
+                    <h4><br>Kopi Wamena</br></h4>
+                </a>
+                <p>
+                    Tanah Papua yang memang subur dan sangat baik untuk tanaman kopi.
+                    Kopi wamena punya aroma yang harum dan tekstur halus, serta keunikan after taste yang bercita rasa manis.
+                    Kenikmatan dari kopi Wamena ini tak hanya terkenal di Indonesia,
+                    tapi hingga ke mancanegara seperti Amerika, Singapura, Jepang, dan Australia.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/Pranger2.png" height="100" alt="">
+                <a href="#">
+                    <h4><br>Kopi Pranger</br></h4>
+                </a>
+                <p>
+                    Setiap kopi yang dibudidayakan di Jawa Barat masih disebut kopi Java Preanger.
+                    Kopi Preanger yang dikenal sejak zaman pendudukan Belanda.
+                    Kopi ini terkenal enak, bahkan kenikmatan kopi Preanger ini terasa hingga ke Eropa.
+                    Saking enaknya, orang Eropa menyebut kopi ini
+                    dengan A Cup of Tea yang berarti secangkir Jawa.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/Kona.png" height="100" alt="">
+                <a href="#">
+                    <h4><br>Kopi Kona</br></h4>
+                </a>
+                <p>
+                    Dari deretan kopi termahal di dunia, pasti ada nama kopi Kona di sana.
+                    Kopi dengan cita rasa yang khas dan nikmat ini hanya bisa tumbuh di Hawaii saja.
+                    Tak ayal untuk dapat menikmati atau sekedar mencicipi kopi ini,
+                    kita musti merogoh kocek cukup dalam.
+                    Kopi Kona juga hanya bisa tumbuh di Hawai pada musim-musim tertentu.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/Flores.png" height="100" alt="">
+                <a href="#">
+                    <h4><br>Kopi Flores</br></h4>
+                </a>
+                <p>
+                    Kopi Flores nampaknya masih mendominasi daftar kopi terkenal dunia.
+                    Kopi Flores yang berasal dari Flores, Nusa Tenggara.
+                    Kopi Flores ada yang berupa kopi Arabica, ada pula yang berupa kopi Robusta.
+                    Yang menjadikan khas dari kopi Flores ini adalah cita rasa asamnya
+                    yang murni dan aroma lemon yang harum.
+                </p>
+                <br></br>
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/Lampung.png" height="100" alt="">
+                <a href="#">
+                    <h4><br>Kopi Lampung</br></h4>
+                </a>
+                <p>
+                    Kopi yang bersal dari salah satu daerah diIndonesia yaitu kopi Lampung.
+                    Kopi Lampung sebagian besar masih termasuk dalam jenis kopi robusta.
+                    Kopi yang terkenal dengan rasa dan aromanya yang khas ini
+                    banyak dibudidayakan di dataran tinggi
+                    seperti di sekitar Lampung Tenah, Lampung Barat, dan daerah Tanggamus.
+                </p>
+                <br></br>
+            </div>
+
+        </div>
     </div>
-</div>
+</section>
+<!-- End blog Area -->
+<!-- Star Sponsor Area -->
+<section class="blog-area section-gap" id="blog">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-60 col-lg-10">
+                <div class="title text-center">
+                    <h1 class="mb-10">Sponsorship By</h1>
+                    <p>Terimakasih Atas Kerjasamanya</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/DanainLogo.png" width="320" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 single-blog">
+                <img class="img-fluid" src="~/images/PockeTravel.png" width="1000" alt="">
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Sponsor Area -->

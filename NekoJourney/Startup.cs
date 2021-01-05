@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using NekoJourney.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NekoJourney.Models;
 
 namespace NekoJourney
 {
@@ -34,13 +35,16 @@ namespace NekoJourney
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<Models.NekoContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                    Configuration.GetConnectionString("Default")));
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+           // services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultUI()
+           //     .AddEntityFrameworkStores<NekoContext>().AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

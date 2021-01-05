@@ -6,15 +6,42 @@
     <title>@ViewData["Title"] - NekoJourney</title>
 
     <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
+        @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" /> *@
+        @* <link rel="stylesheet" href="~/css/site.css" /> *@
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+        <!--
+            CSS
+            ============================================= -->
+        <link rel="stylesheet" href="~/css/linearicons.css">
+        <link rel="stylesheet" href="~/css/font-awesome.min.css">
+        <link rel="stylesheet" href="~/css/bootstrap.css">
+        <link rel="stylesheet" href="~/css/magnific-popup.css">
+        <link rel="stylesheet" href="~/css/nice-select.css">
+        <link rel="stylesheet" href="~/css/animate.min.css">
+        <link rel="stylesheet" href="~/css/owl.carousel.css">
+        <link rel="stylesheet" href="~/css/main.css">
+
     </environment>
     <environment exclude="Development">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+        <!--
+                    CSS
+                    ============================================= -->
+        <link rel="stylesheet" href="~/css/linearicons.css">
+        <link rel="stylesheet" href="~/css/font-awesome.min.css">
+        <link rel="stylesheet" href="~/css/bootstrap.css">
+        <link rel="stylesheet" href="~/css/magnific-popup.css">
+        <link rel="stylesheet" href="~/css/nice-select.css">
+        <link rel="stylesheet" href="~/css/animate.min.css">
+        <link rel="stylesheet" href="~/css/owl.carousel.css">
+        <link rel="stylesheet" href="~/css/main.css">
     </environment>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="~/images/fav.png">
+
+    
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -34,7 +61,6 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                 </ul>
-                <partial name="_LoginPartial" />
             </div>
         </div>
     </nav>
@@ -44,18 +70,84 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2021 - NekoJourney</p>
+        <footer class="footer-area section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>About Us</h6>
+                            <p>
+                                Website ini didedikasikan untuk seluruh pecinta kopi yang ingin mengetahui perkembangan terkini tentang kopi.
+                            </p>
+                            <p class="footer-text">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script> All rights reserved | Website ini dibuat untuk tugas WEB <i class="fa fa-heart-o" aria-hidden="true"></i> by <a target="_blank">Alka</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5  col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>Newsletter</h6>
+                            <p>Stay update with our latest</p>
+                            <div class="" id="mc_embed_signup">
+                                <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
+                                    <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+                                    <button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                                    <div style="position: absolute; left: -5000px;">
+                                        <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                                    </div>
+
+                                    <div class="info pt-20"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6 social-widget align-items-end">
+                        <div class="single-footer-widget">
+                            <h6>Follow Us</h6>
+                            <p>Let us be social</p>
+                            <div class="footer-social d-flex align-items-center">
+                                <a href="https://web.facebook.com/miftahmaritah/"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/miftah_maritah/"><i class="fa fa-instagram"></i></a>
+                                <a href="https://dribbble.com/Miftah-Maritah"><i class="fa fa-dribbble"></i></a>
+                                <a href="https://www.youtube.com/channel/UCu-FKB-8avtOheSX-Y2nngg?view_as=subscriber"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 
     <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
+        @* <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script> *@
+
+        <script src="~/js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="~/js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+        <script src="~/js/easing.min.js"></script>
+        <script src="~/js/hoverIntent.js"></script>
+        <script src="~/js/superfish.min.js"></script>
+        <script src="~/js/jquery.ajaxchimp.min.js"></script>
+        <script src="~/js/jquery.magnific-popup.min.js"></script>
+        <script src="~/js/owl.carousel.min.js"></script>
+        <script src="~/js/jquery.sticky.js"></script>
+        <script src="~/js/jquery.nice-select.min.js"></script>
+        <script src="~/js/parallax.min.js"></script>
+        <script src="~/js/waypoints.min.js"></script>
+        <script src="~/js/jquery.counterup.min.js"></script>
+        <script src="~/js/mail-script.js"></script>
+        <script src="~/js/main.js"></script>
     </environment>
     <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+        @* <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
                 asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
                 asp-fallback-test="window.jQuery"
                 crossorigin="anonymous"
@@ -67,7 +159,24 @@
                 crossorigin="anonymous"
                 integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
         </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script> *@
+        <script src="~/js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="~/js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+        <script src="~/js/easing.min.js"></script>
+        <script src="~/js/hoverIntent.js"></script>
+        <script src="~/js/superfish.min.js"></script>
+        <script src="~/js/jquery.ajaxchimp.min.js"></script>
+        <script src="~/js/jquery.magnific-popup.min.js"></script>
+        <script src="~/js/owl.carousel.min.js"></script>
+        <script src="~/js/jquery.sticky.js"></script>
+        <script src="~/js/jquery.nice-select.min.js"></script>
+        <script src="~/js/parallax.min.js"></script>
+        <script src="~/js/waypoints.min.js"></script>
+        <script src="~/js/jquery.counterup.min.js"></script>
+        <script src="~/js/mail-script.js"></script>
+        <script src="~/js/main.js"></script>
     </environment>
 
     @RenderSection("Scripts", required: false)
